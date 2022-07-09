@@ -18,7 +18,7 @@ type Server interface {
 }
 
 type simpleServer struct {
-	addr string
+	addr  string
 	proxy *httputil.ReverseProxy
 }
 
@@ -39,7 +39,7 @@ func NewSimpleServer(addr string) *simpleServer {
 	handleErr(err)
 
 	return &simpleServer{
-		addr: addr,
+		addr:  addr,
 		proxy: httputil.NewSingleHostReverseProxy(url),
 	}
 }

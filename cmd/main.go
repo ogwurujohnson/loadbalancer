@@ -22,5 +22,5 @@ func main() {
 	http.HandleFunc("/", handleRedirect)
 
 	fmt.Printf("serving requests at 'localhost:%s'\n", lb.Port)
-	http.ListenAndServe(":"+ lb.Port, nil)
+	http.ListenAndServe(":"+lb.Port, nil)
 }

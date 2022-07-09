@@ -1,8 +1,8 @@
 package lib
 
 import (
-	"net/http"
 	"fmt"
+	"net/http"
 )
 
 type LoadBalancer struct {
